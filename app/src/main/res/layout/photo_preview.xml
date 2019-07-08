@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <RelativeLayout
+    android:id="@+id/layContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:id="@+id/imgPhotoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:cropToPadding="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoCenter="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_maxScale="8"
+            app:zoomage_minScale="0.6"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_translatable="true"
+            app:zoomage_zoomable="true"
+            tools:zoomage_maxScale="0.6"
+            android:adjustViewBounds="true" />
+        
+        <RelativeLayout
+            android:id="@+id/layButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginBottom="6dp"
+                android:layout_marginHorizontal="16dp">
+
+            <ImageButton
+                android:src="@drawable/detail"
+                android:id="@+id/btnDetail"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trongsuot"/>
+
+            <ImageButton
+                android:src="@drawable/share"
+                android:id="@+id/btnShare"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trongsuot"/>
+
+            <ImageButton
+                android:src="@drawable/rotate"
+                android:id="@+id/btnRotate"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trongsuot"/>
+
+            <ImageButton
+                android:src="@drawable/crop"
+                android:id="@+id/btnCrop"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trongsuot"/>
+            
+            <ImageButton
+                android:src="@drawable/delete"
+                android:id="@+id/btnDelete"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trongsuot"/>
+
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
